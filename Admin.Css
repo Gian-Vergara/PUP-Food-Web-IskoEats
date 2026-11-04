@@ -1,0 +1,188 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #c4c4c4b2;
+}
+
+/* Navbar CSS */
+
+.navbar {
+    width: 100%;
+    height: 67px;
+    background-color: #ebeaea;
+    border-bottom: 1px 1px solid #000000;
+    box-shadow: 0px 4px 2px -1px gray;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#WebsiteName{
+    margin-right: 0px;
+    
+}
+
+.navtext {
+   font-family: 'Arial', Arial, monospace;
+   font-size: 28px;
+   font-weight: bold;
+}
+
+#T1{
+    color: rgba(136, 3, 3, 0.842);
+}
+
+#T2{
+    color: rgb(211, 12, 12);
+    margin-left: -5px;
+}
+
+/* Logo */
+
+#Pagelogo{ 
+    max-width: 35px;
+    max-height: 35px;
+    margin-right: 10px;
+    margin-left: -15px;
+}
+
+/* 3 Lines Icon */
+
+.fa-bars {
+    font-size: 30px;
+    align-items: center;
+    margin-right: 80px; 
+    margin-left: 20px;
+}
+
+/* Profile Picture */
+
+#Profilepic{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+/* Admin Text */
+#Admintext{
+    color: rgb(185, 3, 3);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 1200px;
+    margin-right: 2px;
+    padding: 7px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 3px solid rgb(59, 57, 57);
+    border-radius: 20px;
+    box-shadow: inset 1px 1px 6px 2px rgb(146, 139, 139);
+}
+
+/*Profile Name/username, it is fixed because it is an admin account*/
+
+#AnotherText{
+    color: rgba(136, 3, 3, 0.842);
+    font-family: 'Arial', Times, serif;
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 25px;
+    margin-left: 3px
+}
+
+/*Statistics*/
+
+.statscontainer{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Arial', Times, serif;
+    font-size: 16px;
+    font-weight: 15px;
+    margin: auto;
+    padding-top: 50px;
+    width: 100%;
+    gap: 22px;
+    
+}
+
+.Cont{
+    background-color: #f0f0e4;
+    padding: 3px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+    width: 260px;
+    min-height: 90px;
+    box-shadow: 3px 11px 15px 4px rgba(1, 1, 0, 0.103);
+}
+
+.staticon{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.statnum{
+    font-size: 28px;
+    font-weight: bold;
+    color: #333333;
+    
+}
+
+.statsdes{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 5px;
+    font-size: 19px;
+}
+
+/*Students or Vendors*/
+#outsideChoice{
+    margin-top: 50px;
+}
+
+#Choice{
+   display: flex;
+   background-color: #f0f0e4;
+   text-align: center;   
+   width: fit-content; /* resize the whole container and fit what is inside/space taken only*/
+   margin: 0 auto;
+   margin-left: 30%;
+   gap: 19px;
+   padding: 8px;
+   padding-left: 19px;
+   padding-right: 19px;
+   border-radius: 50px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600;
+   font-size: 19px;
+   
+}
+
+#student, #vendor{
+    padding: 3px 9px;
+    margin: 0;
+    border-radius: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#student:hover, #vendor:hover{
+    cursor: pointer;
+    background-color: rgb(224, 180, 180);
+}
+
+#student{
+    background-color: rgb(165, 98, 98);
+    border-radius: 50px;
+}
+
+
