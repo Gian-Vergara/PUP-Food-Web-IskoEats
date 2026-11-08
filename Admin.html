@@ -1,8 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 
+    <!-- CSS Link -->
     <link rel = "stylesheet" href = "Admin.Css">
+
+    <!-- Javascript Link -->
+    <script src = "Admin.js" defer></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -22,7 +28,7 @@
     <!-- Navbar   -->
 
     <div class = "navbar">
-            <i class="fa-solid fa-bars" style="color: rgb(0, 0, 0);"></i>
+            <i id = "Menu"  class="fa-solid fa-bars" style="color: rgb(0, 0, 0);"></i>
             <img id = "Pagelogo" src = "Photos/Iskoeatslogo3.png" id = "Logo">
         <span id = "WebsiteName">
             <span class = "navtext" id = "T1">Isko</span> 
@@ -66,10 +72,35 @@
             <span id = "vendor" class = "options">Vendors</span>
         </div>
     </div>
+
+<!-- Sidebar -->
+
+<aside id = "Sidebar">
     
+        <div class = "Side">
+            <img id = "SideLogo" src = "Photos/Iskoeatslogo3.png">
+                <div id = "Sidenames">
+                    <span  id = "Sidename1">Welcome to</span> 
+                    <span  id = "Sidename2">IskoEats</span>  
+                </div>
+            </div>
+        </div>
+    
+        <nav id = "Logout">
+            <button id = "Logoutbtn">
+                Log Out
+            </button>
+        </nav>
 
+</aside>
 
+<!--Approval Requests-->
 
+<div id = "Container">
+    <div id = "ApprovalCont">
+
+    </div>
+</div>
 
 
 
@@ -95,5 +126,12 @@
 
 
 </body>
+    
+<!--Closing Remarks-->
+
+<footer>
+    <span id = "Footertext">© 2024 IskoEats. All Rights Reserved.</span>
+</footer>
+
 
 </html>

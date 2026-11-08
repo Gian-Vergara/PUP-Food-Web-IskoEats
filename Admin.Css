@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     margin: 0px;
     padding: 0px;
     background-color: #c4c4c4b2;
 }
+
+
 
 /* Navbar CSS */
 
@@ -47,12 +51,17 @@ body {
 }
 
 /* 3 Lines Icon */
+/*This is the MENU*/
 
 .fa-bars {
     font-size: 30px;
     align-items: center;
     margin-right: 80px; 
     margin-left: 20px;
+}
+
+.fa-bars:hover{
+    background-color: rgb(199, 191, 191);
 }
 
 /* Profile Picture */
@@ -111,7 +120,7 @@ body {
 .Cont{
     background-color: #f0f0e4;
     padding: 3px;
-    border-radius: 50px;
+    border-radius: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -185,4 +194,124 @@ body {
     border-radius: 50px;
 }
 
+/* Sidebar */
 
+#Sidebar{
+   background-color: rgba(136, 3, 3, 0.918);
+   height: 100vh;
+   width: 160px;
+   position: fixed;
+   top: 0;
+   left: 0;
+
+
+   transform: translateX(-100%);
+   transition: transform 0.3s ease;
+}
+
+#SideLogo{
+    width: 35px;
+    height: 35px;
+}
+
+#Sidename1{
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #f0f0e4; 
+}
+
+#Sidename2{
+    text-align: center;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f0f0e4;
+}
+
+.Side{
+    padding: 1px;
+    margin-top: 15px;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-bottom: 1px  solid #f0f0e4;
+
+}
+
+/* Sidebar Active State */
+#Sidebar.active {
+    transform: translateX(0);
+}
+
+/* SIDEBAR CONTENTS*/
+/*  LOG OUT         */
+
+/*
+    READ.ME READ.ME READ.ME
+    ALERT ALERT ALERT ALERT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+    Everything below and above is still not finalized especially the design
+    this is a reminder to the developers
+
+
+*/
+
+#Logout{
+    text-align: center;
+    margin-top: 25px;
+}
+
+#Logoutbtn{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 50px;
+    background-color: rgb(209, 209, 206);
+}
+
+/*Approval Container*/
+
+#Container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 18px;
+}
+
+#ApprovalCont{
+    width: 840px;
+    height: 450px;
+    background-color: rgb(241, 239, 225);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin-top: 3px;
+    margin-bottom: 18px;
+}
+
+/* for QUEUE sorting when the objects overflows*/
+
+#ApprovalCont {
+    overflow-y: auto;
+}
+
+
+
+/*Footer the closing remarks*/
+
+footer{
+    background-color: rgb(0, 0, 0);
+    height: 150px;
+    bottom: 0;
+    top: 0;
+    margin-top: 30px;  
+}
