@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IskoEats StartUp</title>
+        <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        .center-box 
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align:center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 { font-size: 50px;}
+        p {font-size: 20px; margin: 5px;}
+        button {margin: 10px; font-size: 17px; border-radius: 30px; padding: 15px; background-color: #5EDC1F; color: white;}
+        h1 {margin: 10px;}
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 150px;
+            height: auto;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: calc(100% + 100px);
+            height: calc(100% + 100px);
+            background-image: url(Lagoon.jpg);
+            background-size: cover;
+            background-position: center;
+            filter: blur(10px);
+            transform: scale(1.1);
+            z-index: -1;
+        }
+        .content-box 
+        {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        </style>
+</head>
+<body>
+    <div class="background"></div>
+    <img src="CLogo.png" alt="PUP Lagoon" class="logo">
+    <div class="center-box">
+    <div class="content-box">
+    <h1>Welcome to IskoEats</h1>
+    <p> Pre-order your favourite food from the Lagoon stallspay online and pick-up it up movement it is read</p>
+    <p>No more long lines between classes.</p>
+    <a href="IskoEatsLogIn.HTML"><button> Let's get started</button> </a>
+    </div>
+    </div>
+</body>
+</html>
