@@ -1,0 +1,88 @@
+       body {
+            margin: 0;
+            padding: 0;
+
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+            height: 100vh;
+            margin: 0;
+        }
+        .login-box {
+        background-color: white;
+        padding: 80px;
+        border-radius: 10px;
+        text-align: center;
+        }
+        .textbox {
+        display: block;
+        width: 300px;
+        margin: 10px auto;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: rgb(232, 226, 226);
+        border: none;
+        }
+        .logo {
+            height: auto;
+            width: 150px;
+            margin: -50px;
+        }
+        button {
+            border-radius: 20px;
+            width: 100px;
+            padding: 5px;
+            background-color: #5edc1f;
+            border: 0px;
+        }
+        button:hover
+        {
+            background-color: #5dcf24;
+        }
+        p {
+            margin: -5px;
+            font-family: Arial;
+        }
+        h1 {
+            margin-bottom: 10px;
+            font-family: Arial;
+        }
+        .background {
+            position: fixed;
+            top: -10px;
+            left: 0;
+            width: calc(100% + 100px);
+            height: calc(100% + 100px);
+            background-image: url(Lagoon.jpg);
+            background-size: cover;
+            background-position: center;
+            transform: scale(1.1);
+            z-index: -1;
+            filter: blur(10px);
+        }
+
+    .password-container {
+    position: relative;
+    width: 320px;
+    margin: 10px auto;
+}
+
+.password-container .textbox {
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 60px; /* space for Show button */
+}
+
+.show-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: #007bff;
+    cursor: pointer;
+    width: auto;
+    padding: 0;
+    font-size: 14px;
+}
