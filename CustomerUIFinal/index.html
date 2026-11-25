@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#a3263d">
+<title>IskoEats</title>
+<!-- CSS is linked here -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER (logo, burger icon, welcome text) ===== -->
+<!-- sticky top area: header + tabs stay visible while scrolling -->
+<div class="top">
+<header class="header">
+  <!-- this is the ICON_BURGER button; JS swaps it to an "X" when the menu is open -->
+  <button id="burgerBtn" class="burger" aria-label="Menu">
+    <img id="burgerIcon" src="assets/icon_burger.png" alt="">
+    <span id="burgerX" class="x hidden">X</span>
+  </button>
+  <img class="logo" src="assets/icon_logo.png" alt="IskoEats">
+  <div class="welcome"><b>Welcome!</b><br><span id="customerName">John Doe Silvas</span></div>
+
+  <!-- dropdown opened by the burger: Allergens / Help and Support / Log out -->
+  <nav id="burgerMenu" class="burger-menu hidden">
+    <button id="menuAllergens">Allergens</button>
+    <!-- Help and Support goes to Gmail (see script.js) -->
+    <button id="menuHelp">Help and Support</button>
+    <button id="menuLogout">Log out</button>
+  </nav>
+</header>
+
+<!-- ===== TABS ===== -->
+<nav class="tabs">
+  <button class="tab active" data-page="map">Map</button>
+  <button class="tab" data-page="menu">Menu</button>
+  <button class="tab" data-page="cart">Cart<span id="tabBadge" class="tab-badge hidden"></span></button>
+  <button class="tab" data-page="orders">Orders</button>
+</nav>
+</div>
+
+<main class="app">
+  <!-- ===== PAGE: MAP ===== -->
+  <section id="page-map" class="page">
+    <div class="map-info">
+    <div class="reminder"><h3>Reminder</h3><p>Campus stalls are open 7 AM to 7 PM.</p></div>
+    <h2 class="map-title">Popular Food Nearby</h2>
+    <p class="map-hint">Tap a pin to see the stall and its menu.</p>
+    </div>
+    <!-- this is the map; the pins are drawn on the image, hotspots are placed on top by JS -->
+    <div class="map-wrap" id="mapWrap">
+      <img src="assets/lagoon_map.png" alt="Campus map">
+    </div>
+  </section>
+
+  <!-- ===== PAGE: MENU ===== -->
+  <section id="page-menu" class="page hidden">
+    <!-- stall banner: only shown after a stall is tapped on the map -->
+    <div id="stallBanner" class="stall-banner hidden"></div>
+
+    <h2 id="menuTitle" class="menu-title">Today's Menu</h2>
+    <div id="foodList" class="food-list"></div>
+  </section>
+
+  <!-- ===== PAGE: CART (order summary + e-payment) ===== -->
+  <section id="page-cart" class="page hidden">
+    <div id="cartArea"></div>
+  </section>
+
+  <!-- ===== PAGE: ORDERS ===== -->
+  <section id="page-orders" class="page hidden">
+    <div class="select-wrap">
+      <button id="orderFilterBtn" class="select-btn"><span id="orderFilterLabel">All Orders</span><img src="assets/icon_dropbox.png" alt=""></button>
+      <div id="orderFilterMenu" class="select-menu hidden">
+        <button data-f="all" class="active">All Orders</button>
+        <button data-f="active">Active</button>
+        <button data-f="past">Past</button>
+      </div>
+    </div>
+    <div id="orderList"></div>
+  </section>
+</main>
+
+<!-- ===== CHECK OUT BAR (appears when cart has items) ===== -->
+<div id="checkoutBar" class="checkout-bar hidden">
+  <span id="cartCount" class="count">0</span>
+  <div class="bar-text"><span id="barItems"></span><br><span id="barTotal"></span></div>
+  <button id="checkoutBtn" class="btn">Check out</button>
+</div>
+
+<!-- small message that pops up (e.g. "Added to cart") -->
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<!-- ===== ALLERGEN POP-UP ===== -->
+<div id="allergenModal" class="modal hidden">
+  <div class="modal-box">
+    <h3>Allergens!</h3>
+    <p>Tick everything you are allergic to and we will show a caution sign on any food that contains it. No allergies? Leave everything unticked and press Save.</p>
+    <div id="allergenList" class="allergen-list"></div>
+    <button id="allergenSave" class="btn right">Save</button>
+  </div>
+</div>
+
+<!-- JS is linked here (the JS builds everything inside the empty containers above) -->
+<script src="script.js"></script>
+</body>
+</html>
